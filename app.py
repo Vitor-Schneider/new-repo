@@ -6,9 +6,9 @@ st.header('Analises de dados de veículos nos EUA')  # título
 
 car_data = pd.read_csv('vehicles_us.csv')  # lendo os dados
 build_histogram = st.checkbox('Criar um histograma')  # criar um botão
-scatter_button = st.checkbox('Criar um grafico de dispersao')  # criar um botão
+build_scatter = st.checkbox('Criar um grafico de dispersao')  # criar um botão
 
-if hist_button:  # se o botão for clicado
+if build_histogram:  
     # escrever uma mensagem
     st.write(
         'Criando um histograma para o conjunto de dados de anúncios de vendas de carros')
@@ -19,7 +19,7 @@ if hist_button:  # se o botão for clicado
     # exibir um gráfico Plotly interativo
     st.plotly_chart(fig, use_container_width=True)
 
-if scatter_button:  # se o botão for clicado
+if build_scatter:  
     # escrever uma mensagem
     st.write(
         'Criando um gráfico de dispersão para o conjunto de dados de anúncios de vendas de carros')
