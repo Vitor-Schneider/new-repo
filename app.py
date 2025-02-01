@@ -5,8 +5,8 @@ import streamlit as st
 st.header('Analises de dados de veículos nos EUA')  # título
 
 car_data = pd.read_csv('vehicles_us.csv')  # lendo os dados
-hist_button = st.button('Criar histograma')  # criar um botão
-scatter_button = st.button('Criar gráfico de dispersão')  # criar um botão
+build_histogram = st.checkbox('Criar um histograma')  # criar um botão
+scatter_button = st.checkbox('Criar um grafico de dispersao')  # criar um botão
 
 if hist_button:  # se o botão for clicado
     # escrever uma mensagem
