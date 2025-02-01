@@ -23,8 +23,8 @@ if scatter_button:  # se o botão for clicado
         'Criando um gráfico de dispersão para o conjunto de dados de anúncios de vendas de carros')
 
     # criar um gráfico de dispersão
-    fig = px.scatter(car_data, x="year", y="price")
+    fig = px.scatter(car_data, x="odometer", y="price") # criar um gráfico de dispersão
 
     # exibir um gráfico Plotly interativo
     st.plotly_chart(fig, use_container_width=True)
-    
+
